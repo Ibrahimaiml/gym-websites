@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { MapPin, Phone, Clock, Navigation, Star, Send, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Clock, Navigation, Star, Send, CheckCircle2 } from 'lucide-react';
 
 export default function LocationContact() {
   const [formSent, setFormSent] = useState(false);
@@ -18,12 +18,12 @@ export default function LocationContact() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-beast-500/10 border border-beast-500/30 text-beast-400 text-xs font-semibold uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-beast-500/10 border border-beast-500/30 text-beast-400 text-xs font-bold uppercase tracking-wider mb-4 shadow-glow-crimson">
             <MapPin className="w-4 h-4" />
             <span>Keelaveethi Madurai Main Location</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
-            Visit & Contact <span className="gold-gradient-text">Beauty and Beast Gym</span>
+          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight font-heading">
+            VISIT & CONTACT <span className="crimson-gradient-text">BEAUTY AND BEAST</span>
           </h2>
           <p className="mt-4 text-gray-400 text-base md:text-lg">
             Located on Keelaveli Veethi near Rajmahal Car Parking, Kamarajar Salai, Madurai. Drop by or call us instantly!
@@ -35,7 +35,7 @@ export default function LocationContact() {
           {/* Location & Phone Card (5 cols) */}
           <div className="lg:col-span-5 space-y-6 flex flex-col justify-between">
             
-            <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-beast-500/30 space-y-6">
+            <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-beast-500/40 space-y-6">
               
               {/* Gym Name & 5.0 Rating */}
               <div>
@@ -43,14 +43,14 @@ export default function LocationContact() {
                   <Star className="w-4 h-4 fill-beast-400" />
                   <span>5.0 ★ Rating (40+ Verified Reviews)</span>
                 </div>
-                <h3 className="text-2xl font-black text-white">Beauty and Beast Fitness Gym</h3>
-                <span className="inline-block mt-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold">
+                <h3 className="text-2xl font-black text-white font-heading">Beauty and Beast Fitness Gym</h3>
+                <span className="inline-block mt-2 px-3 py-1 rounded-full bg-beast-500/15 border border-beast-500/40 text-beast-400 text-xs font-bold">
                   ● Open Daily · Closes 10 PM
                 </span>
               </div>
 
               {/* Address details */}
-              <div className="space-y-4 pt-4 border-t border-gray-800">
+              <div className="space-y-4 pt-4 border-t border-neutral-800">
                 <div className="flex items-start space-x-3.5">
                   <div className="w-9 h-9 rounded-xl bg-beast-500/20 text-beast-400 flex items-center justify-center shrink-0 mt-0.5 font-bold">
                     <MapPin className="w-5 h-5" />
@@ -81,7 +81,7 @@ export default function LocationContact() {
                 </div>
 
                 <div className="flex items-start space-x-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5 font-bold">
+                  <div className="w-9 h-9 rounded-xl bg-neutral-800 text-gray-300 flex items-center justify-center shrink-0 mt-0.5 font-bold">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
@@ -94,12 +94,12 @@ export default function LocationContact() {
               </div>
 
               {/* Direct Action CTAs */}
-              <div className="space-y-3 pt-4 border-t border-gray-800">
+              <div className="space-y-3 pt-4 border-t border-neutral-800">
                 <a
                   href="tel:08428090900"
-                  className="w-full inline-flex items-center justify-center space-x-2.5 py-4 rounded-2xl bg-gradient-to-r from-beast-500 via-beast-600 to-beast-amber text-black font-extrabold text-base shadow-glow-gold hover:scale-[1.02] transition-transform"
+                  className="w-full inline-flex items-center justify-center space-x-2.5 py-4 rounded-2xl bg-gradient-to-r from-beast-500 via-beast-600 to-beast-900 text-white font-extrabold text-base shadow-glow-crimson hover:scale-[1.02] transition-transform"
                 >
-                  <Phone className="w-5 h-5 fill-black animate-pulse" />
+                  <Phone className="w-5 h-5 fill-white animate-pulse" />
                   <span>Call Us Now: 084280 90900</span>
                 </a>
 
@@ -119,14 +119,14 @@ export default function LocationContact() {
           </div>
 
           {/* Embedded Google Map Box (7 cols) */}
-          <div className="lg:col-span-7 rounded-3xl overflow-hidden glass-panel border border-beast-500/20 min-h-[420px] relative flex flex-col justify-between">
+          <div className="lg:col-span-7 rounded-3xl overflow-hidden glass-panel border border-beast-500/30 min-h-[420px] relative flex flex-col justify-between">
             <div className="w-full h-full min-h-[380px] relative">
               <iframe
                 title="Beauty and Beast Fitness Gym Location Madurai"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.12586208643!2d78.1215!3d9.9195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnMTAuMiJOIDc4wrAwNycxNy40IkU!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
-                style={{ border: 0, minHeight: '400px', filter: 'brightness(0.85) contrast(1.1)' }}
+                style={{ border: 0, minHeight: '400px', filter: 'brightness(0.8) contrast(1.2) hue-rotate(330deg)' }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -135,14 +135,14 @@ export default function LocationContact() {
             </div>
 
             {/* Callback Request Form Bar */}
-            <div className="p-6 bg-dark-950/95 border-t border-gray-800 rounded-b-3xl">
-              <h4 className="text-base font-extrabold text-white mb-2 flex items-center gap-2">
+            <div className="p-6 bg-dark-950/98 border-t border-neutral-800 rounded-b-3xl">
+              <h4 className="text-base font-extrabold text-white mb-2 flex items-center gap-2 font-heading">
                 <Send className="w-4 h-4 text-beast-400" />
                 <span>Request Instant Gym Callback</span>
               </h4>
 
               {formSent ? (
-                <div className="p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold flex items-center space-x-2">
+                <div className="p-3 rounded-xl bg-beast-500/20 border border-beast-500/40 text-beast-400 text-xs font-bold flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4" />
                   <span>Callback requested! Our Madurai trainers will call 084280 90900 or your number shortly.</span>
                 </div>
@@ -151,18 +151,18 @@ export default function LocationContact() {
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="bg-dark-900 border border-gray-700 rounded-xl px-4 py-2.5 text-white text-xs font-semibold focus:outline-none focus:border-beast-500 flex-1"
+                    className="bg-dark-900 border border-neutral-800 rounded-xl px-4 py-2.5 text-white text-xs font-semibold focus:outline-none focus:border-beast-500 flex-1"
                     required
                   />
                   <input
                     type="tel"
                     placeholder="Your Mobile Number"
-                    className="bg-dark-900 border border-gray-700 rounded-xl px-4 py-2.5 text-white text-xs font-semibold focus:outline-none focus:border-beast-500 flex-1"
+                    className="bg-dark-900 border border-neutral-800 rounded-xl px-4 py-2.5 text-white text-xs font-semibold focus:outline-none focus:border-beast-500 flex-1"
                     required
                   />
                   <button
                     type="submit"
-                    className="px-5 py-2.5 rounded-xl bg-beast-500 text-black font-extrabold text-xs shadow-glow-gold hover:opacity-90 shrink-0"
+                    className="px-5 py-2.5 rounded-xl bg-beast-500 text-white font-extrabold text-xs shadow-glow-crimson hover:opacity-90 shrink-0"
                   >
                     Submit Request
                   </button>

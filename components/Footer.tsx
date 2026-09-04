@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Phone, Star, MapPin, Flame, Heart } from 'lucide-react';
+import { Phone, Star, Flame, Heart } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -12,11 +12,11 @@ export default function Footer() {
           {/* Brand Info (5 cols) */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-beast-500 to-beast-600 flex items-center justify-center shadow-glow-gold">
-                <Flame className="w-6 h-6 text-black fill-black" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-beast-500 to-beast-600 flex items-center justify-center shadow-glow-crimson">
+                <Flame className="w-6 h-6 text-white fill-white" />
               </div>
               <span className="text-2xl font-black tracking-tight text-white uppercase font-heading">
-                BEAUTY & <span className="gold-gradient-text">BEAST</span>
+                BEAUTY & <span className="crimson-gradient-text">BEAST</span>
               </span>
             </div>
 
@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="pt-2">
               <a
                 href="tel:08428090900"
-                className="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-beast-500/10 border border-beast-500/40 text-beast-400 font-extrabold text-xs hover:bg-beast-500 hover:text-black transition-all"
+                className="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-beast-500/10 border border-beast-500/40 text-beast-400 font-extrabold text-xs hover:bg-beast-500 hover:text-white transition-all"
               >
                 <Phone className="w-4 h-4 fill-current" />
                 <span>Call Hotline: 084280 90900</span>
@@ -42,20 +42,20 @@ export default function Footer() {
 
           {/* Navigation Links (3 cols) */}
           <div className="md:col-span-3 space-y-3">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Quick Navigation</h4>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">Quick Navigation</h4>
             <ul className="space-y-2 text-xs font-medium">
               <li><a href="#equipment" className="hover:text-beast-400 transition-colors">3D Equipment Showcase</a></li>
+              <li><a href="#gallery" className="hover:text-beast-400 transition-colors">Beast Arena Gallery</a></li>
               <li><a href="#programs" className="hover:text-beast-400 transition-colors">Diet & Nutrition Plans</a></li>
               <li><a href="#programs" className="hover:text-beast-400 transition-colors">Workout Splits (PPL / Power)</a></li>
               <li><a href="#calculator" className="hover:text-beast-400 transition-colors">Macro & Calorie Calculator</a></li>
-              <li><a href="#dashboards" className="hover:text-beast-400 transition-colors">Client Workout Portal</a></li>
               <li><a href="#location" className="hover:text-beast-400 transition-colors">Madurai Location & Hours</a></li>
             </ul>
           </div>
 
           {/* Operating Hours & Address (4 cols) */}
           <div className="md:col-span-4 space-y-3">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Madurai Location Details</h4>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">Madurai Location Details</h4>
             <p className="text-xs text-gray-300 leading-relaxed">
               3rd floor, L. k. Bhavanam, 187, keelaveli veethi, near rajmahal car parking, Kamarajar Salai, Madurai Main, Madurai, Tamil Nadu 625001
             </p>
@@ -67,7 +67,7 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800/80 text-center text-xs text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-neutral-800 text-center text-xs text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} Beauty and Beast Fitness Gym, Madurai Main. All rights reserved.</p>
           <p className="flex items-center gap-1">
             <span>Built for High Performance & Results</span>

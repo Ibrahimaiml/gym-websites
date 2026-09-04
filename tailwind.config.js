@@ -10,36 +10,32 @@ module.exports = {
     extend: {
       colors: {
         beast: {
-          50: '#fffbeb',
-          100: '#fef3c7',
-          400: '#fbbf24',
-          500: '#f59e0b',
-          600: '#d97706',
-          900: '#78350f',
-          gold: '#FFD700',
-          amber: '#FF9900',
+          50: '#fff1f2',
+          100: '#ffe4e6',
+          400: '#ff3355',
+          500: '#FF0033',
+          600: '#E50914',
+          700: '#b91c1c',
+          900: '#990021',
+          crimson: '#FF0033',
+          red: '#E50914',
         },
         dark: {
-          950: '#090a0f',
-          900: '#0f111a',
-          800: '#171b26',
-          700: '#222838',
-          600: '#2d354a',
+          950: '#050505',
+          900: '#0a0a0a',
+          800: '#141414',
+          700: '#1f1f1f',
+          600: '#2b2b2b',
         },
-        cyber: {
-          emerald: '#10b981',
-          cyan: '#06b6d4',
-          red: '#ef4444',
-        }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         heading: ['Outfit', 'sans-serif'],
       },
       boxShadow: {
-        'glow-gold': '0 0 25px -5px rgba(255, 215, 0, 0.4)',
-        'glow-emerald': '0 0 25px -5px rgba(16, 185, 129, 0.4)',
-        'glow-red': '0 0 25px -5px rgba(239, 68, 68, 0.4)',
+        'glow-crimson': '0 0 25px -3px rgba(255, 0, 51, 0.45)',
+        'glow-red': '0 0 25px -3px rgba(229, 9, 20, 0.45)',
+        'glow-dark': '0 0 25px -3px rgba(0, 0, 0, 0.8)',
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
